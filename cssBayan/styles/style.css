@@ -175,10 +175,10 @@ input:checked ~ .memes__content {
   .memes:hover > .memes__meme > label {
     color: black;
   }
-  input:checked ~ .memes__content {
+  /* input:checked ~ .memes__content {
     max-height: 50%;
     max-width: 50%;
-  }
+  } */
 
   .memes__meme:active .memes__content {
     filter: brightness(150%);
