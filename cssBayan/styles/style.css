@@ -22,7 +22,6 @@ h1 {
   align-items: center;
 }
 input {
-  /* position: static; */
   opacity: 0;
   z-index: -1;
   padding: 0;
@@ -37,7 +36,6 @@ input {
 .memes__meme {
   display: flex;
   flex-direction: column;
-  /* gap: 0rem; */
   width: 100%;
   color: white;
   overflow: hidden;
@@ -47,16 +45,13 @@ input {
 
 .meme-label {
   color: rgb(141, 12, 233);
-  /* color: teal; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   background: #5e9ad6;
   font-weight: bold;
-  cursor: pointer;
   margin: 0;
-  /* border-bottom: 1px solid; */
   border-radius: 0.2rem;
   transition: all 0.55s ease-in;
 }
@@ -113,10 +108,11 @@ input:checked ~ .memes__content {
 .memes:active > .memes__meme .fa-chevron-right {
   opacity: 1;
 }
-.memes:hover > .memes__meme > label {
-  color: black;
-}
+
 @media (hover: hover) {
+  .memes:hover > .memes__meme > label {
+    color: black;
+  }
   .memes__meme:hover > .memes__content {
     max-height: 100vh;
     max-width: 100%;
@@ -128,7 +124,9 @@ input:checked ~ .memes__content {
   .memes__meme:hover > .memes__content > img {
     margin: auto;
   }
-
+  .meme-label {
+    cursor: pointer;
+  }
   .memes:hover > .memes__meme .fa-chevron-right {
     opacity: 1;
     transition: all 0.55s ease-in;
