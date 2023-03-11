@@ -46,7 +46,8 @@ input {
 }
 
 .meme-label {
-  color: rgb(120, 26, 186);
+  color: rgb(141, 12, 233);
+  /* color: teal; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -107,7 +108,7 @@ input:checked ~ .memes__content {
   display: block;
   max-width: 100%;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: max-width 0.55s ease-in;
 }
 
@@ -179,5 +180,13 @@ input:checked ~ .memes__content {
   input:checked ~ .memes__content {
     max-height: 50%;
     max-width: 50%;
+  }
+
+  .memes__meme:active .memes__content {
+    filter: brightness(150%);
+    cursor: crosshair;
+  }
+  .memes__meme:active .meme-label {
+    color: rgb(141, 12, 233) !important;
   }
 }
