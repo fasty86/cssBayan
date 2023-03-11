@@ -61,9 +61,7 @@ input {
   transition: all 0.55s ease-in;
 }
 
-/* .memes__meme:hover  */
 .memes__meme:active > .memes__content {
-  /* background: green; */
   max-height: 100vh;
   max-width: 100%;
   transform: scale(1);
